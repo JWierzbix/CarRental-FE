@@ -1,0 +1,41 @@
+.navbar {
+    padding: 10px;
+    background-color: #0A100D;
+    a{
+        margin-right: 59px;
+        color: #FFFF;
+    } 
+  }
+
+.navbar-brand{
+    margin-left: -60px;
+    padding-right: 100px;
+}
+
+.nav-item{
+    
+    a:hover{
+    transition: 0.8s;
+    color: #F2AA4CFF;
+    cursor: pointer;
+    }
+}
+
+.btn{
+    border-radius: 25px;
+    margin-top: 2px;
+    margin-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo-container{
+    background-color: aqua;
+}
+
+.nav-image{
+    margin-top: -2px;
+    margin-right: -50px;
+}
+
+
