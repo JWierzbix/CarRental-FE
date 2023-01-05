@@ -1,4 +1,5 @@
 .navbar {
+    z-index: 100;
     padding: 10px;
     background-color: #0A100D;
     a{
@@ -29,13 +30,15 @@
     padding-right: 20px;
 }
 
-.logo-container{
-    background-color: aqua;
-}
-
 .nav-image{
     margin-top: -2px;
     margin-right: -50px;
 }
+
+.navbar-toggler {
+    color: white;
+  }
+
+
 
 
