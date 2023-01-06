@@ -1,3 +1,5 @@
+$primary: #F2AA4CFF;
+
 .navbar {
     z-index: 100;
     padding: 10px;
@@ -6,7 +8,7 @@
         margin-right: 59px;
         color: #FFFF;
     } 
-  }
+}
 
 .navbar-brand{
     margin-left: -60px;
@@ -37,8 +39,7 @@
 
 .navbar-toggler {
     color: white;
-  }
-
-
+    border: 2px solid #F2AA4CFF;
+}
 
 
