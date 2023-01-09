@@ -3,13 +3,13 @@
     padding: 10px;
     background-color: #0A100D;
     a{
-        margin-right: 59px;
+        margin-right: 62px;
         color: #FFFF;
     } 
 }
 
 .navbar-brand{
-    margin-left: -60px;
+    margin-left: -150px;
     padding-right: 100px;
 }
 
@@ -30,17 +30,36 @@
     padding-right: 20px;
 }
 
+.btn-outline-light{
+    color: #FFFF;
+    border-color: #FFFF;
+    margin-bottom: 7px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.btn-outline-light:hover{
+    color: black;
+}
+
 .nav-image{
     margin-top: -2px;
     margin-right: -50px;
 }
 
-.navbar-toggler {
-    color: white;
+.social-media{
+    margin-left: 15px;
+}
+
+.navbar-toggler{
     border: 2px solid #F2AA4CFF;
     position: absolute;
     top: 4vh;
     right: 10vh;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(242, 170, 76, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 
