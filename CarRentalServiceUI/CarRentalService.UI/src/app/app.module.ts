@@ -9,6 +9,7 @@ import { BackgroundS1Component } from './home/background-s1/background-s1.compon
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './home/about-us/about-us.component';
 import { CarsComponent } from './cars/cars.component';
+import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CarsComponent } from './cars/cars.component';
     BackgroundS1Component,
     HomeComponent,
     AboutUsComponent,
-    CarsComponent
+    CarsComponent,
+    CollapseWhenRoutingDirective
   ],
   imports: [
     BrowserModule,
