@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './home/about-us/about-us.component';
 import { CarsComponent } from './cars/cars.component';
 import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing.directive';
+import { CarComponent } from './cars/car/car.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing
     HomeComponent,
     AboutUsComponent,
     CarsComponent,
-    CollapseWhenRoutingDirective
+    CollapseWhenRoutingDirective,
+    CarComponent
   ],
   imports: [
     BrowserModule,
