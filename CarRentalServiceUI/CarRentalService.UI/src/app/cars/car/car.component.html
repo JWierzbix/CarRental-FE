@@ -9,10 +9,10 @@
             <div class="card-body">
                 <div class="car-stats">
                     <p class="card-text">Silnik</p>
-                    <p class="card-text">{{ data.engineCapacity }} / {{ data.horsePower }}hp</p>
+                    <p class="card-text">{{ data.engineCapacity | number : '1.1-2' }} / {{ data.horsePower }}hp</p>
                     <p class="card-text">{{ data.drive }}</p>
                     <p class="card-text">od 0 do 100km/h</p>
-                    <p class="card-text">{{ data.timeFrom0To100 }} s</p>
+                    <p class="card-text">{{ data.timeFrom0To100 | number : '1.1-2' }} s</p>
                 </div>
                 <div class="btns">
                     <button class="book-btn btn">Zarezerwuj</button><br>
