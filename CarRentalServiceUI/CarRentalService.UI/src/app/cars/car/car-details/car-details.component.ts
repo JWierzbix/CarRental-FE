@@ -25,7 +25,7 @@ export class CarDetailsComponent implements OnInit {
           this.text = details;
         },
         error: () => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/not-found']);
         }
       })
     });

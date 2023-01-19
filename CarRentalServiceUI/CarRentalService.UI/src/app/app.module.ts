@@ -13,6 +13,7 @@ import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing
 import { CarComponent } from './cars/car/car.component';
 import { CarDetailsComponent } from './cars/car/car-details/car-details.component';
 import { LoadingComponent } from './loading/loading.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LoadingComponent } from './loading/loading.component';
     CollapseWhenRoutingDirective,
     CarComponent,
     CarDetailsComponent,
-    LoadingComponent
+    LoadingComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
