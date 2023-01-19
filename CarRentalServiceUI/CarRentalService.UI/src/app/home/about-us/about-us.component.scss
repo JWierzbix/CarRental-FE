@@ -17,8 +17,24 @@
 
 }
 
+.title {
+  position: relative;
+  top: 10vh;
+  width: 100vmin;
+  float: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 230%;
+  filter: blur(0);
+  .subtitle{
+      font-size:70%;
+  }
+}
+
 
 .traits {
+  position: relative;
+  top:10vh;
   width: 100vmin;
   height: 25vh;
   padding-top: 10vh;
@@ -49,6 +65,6 @@
   float: left;
   color: rgba(242, 170, 76, 1);
   filter: blur(0);
-  font-size: 400%;
+  font-size: 380%;
   padding: 1vh;
 }
