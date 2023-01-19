@@ -18,9 +18,7 @@ export class CarsComponent implements OnInit {
     this.carsObservable = this.carService.getAllCars()
 
     this.carsObservable.subscribe((cars) => {
-      console.log(cars);
       this.cars = cars;
     });
   }
-
 }
