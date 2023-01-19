@@ -8,6 +8,9 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { BackgroundS1Component } from './home/background-s1/background-s1.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './home/about-us/about-us.component';
+import { CarsComponent } from './cars/cars.component';
+import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing.directive';
+import { CarComponent } from './cars/car/car.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { AboutUsComponent } from './home/about-us/about-us.component';
     NavigationComponent,
     BackgroundS1Component,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    CarsComponent,
+    CollapseWhenRoutingDirective,
+    CarComponent
   ],
   imports: [
     BrowserModule,
