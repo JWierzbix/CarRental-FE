@@ -10,6 +10,7 @@ import { CarService } from './car.service';
 })
 export class CarsComponent implements OnInit {
   carsObservable: Observable<Car[]>;
+  cars: Car[];
 
   constructor(private carService: CarService) {}
 
@@ -18,6 +19,7 @@ export class CarsComponent implements OnInit {
 
     this.carsObservable.subscribe((cars) => {
       console.log(cars);
+      this.cars = cars;
     });
   }
 

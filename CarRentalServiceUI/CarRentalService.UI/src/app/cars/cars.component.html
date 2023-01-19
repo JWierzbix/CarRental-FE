@@ -1,7 +1,13 @@
 <div class="container">
-    <div class="row gx-5">
-        <div class="col-xl-4 col-lg-6 col-sm-12 car-container" *ngFor="let car of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
-            <app-car></app-car>
+
+    <div *ngIf="!cars" class="loading-screen">
+        Loading
+    </div>
+    <div 
+      class="row gx-5"
+      *ngIf="cars">
+        <div class="col-xl-4 col-lg-6 col-sm-12 car-container" *ngFor="let car of cars">
+            <app-car [data]="car"></app-car>
         </div>
     </div>
 </div>
