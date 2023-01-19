@@ -23,12 +23,11 @@ export class CarService {
     return new Observable((observer: Observer<string>) => {
       setTimeout(() => {
         if(id === 'bmw-m8-competition'){
-          observer.next('BMW kox auto!')
+          observer.next('BMW kox auto!');
         }
         else {
           observer.error('BMW  ssie');
-        }
-        
+        }   
       }, 2000)
     });
   }

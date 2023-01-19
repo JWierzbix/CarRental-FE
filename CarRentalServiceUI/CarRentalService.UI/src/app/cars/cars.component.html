@@ -1,12 +1,7 @@
 <div class="container">
 
-    <div 
-        class="loading-screen"
-        *ngIf="!cars">
-        <div class="spinner-border text-primary" role="status">
-            <span class="sr-only"></span>
-        </div>
-    </div>
+    <app-loading *ngIf="!cars"></app-loading>
+    
     <div class="row gx-5" *ngIf="cars">
         <div class="col-xl-4 col-lg-6 col-sm-12 car-container" *ngFor="let car of cars">
             <app-car [data]="car"></app-car>

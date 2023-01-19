@@ -1,9 +1,7 @@
 <div class="container">
-    <div *ngIf="!text">
-        <p style="color: white">Loading</p>
-    </div>
+    <app-loading *ngIf="!text"></app-loading>
+
     <div *ngIf="text">
         <p style="color: white">{{ text }}</p>
     </div>
-    
 </div>
