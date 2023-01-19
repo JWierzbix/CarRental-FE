@@ -1,0 +1,14 @@
+<swiper [slidesPerView]="4"
+        [spaceBetween]="50"
+        [navigation]="true"
+        [centeredSlides]="false"
+        [loop]="true"
+        [keyboard]="{
+    enabled: true
+  }"
+        [virtual]="false"
+        class="my-swiper">
+  <ng-template swiperSlide *ngFor="let slide of slides$ | async; index as i">
+     <img src="{{slide}}"/>
+   </ng-template>
+</swiper>

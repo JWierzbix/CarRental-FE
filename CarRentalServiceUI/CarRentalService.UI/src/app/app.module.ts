@@ -8,6 +8,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { BackgroundS1Component } from './home/background-s1/background-s1.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './home/about-us/about-us.component';
+import { SwiperComponent } from './home/about-us/swiper/swiper.component'
+import { SwiperModule } from 'swiper/angular'
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { AboutUsComponent } from './home/about-us/about-us.component';
     NavigationComponent,
     BackgroundS1Component,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    SwiperComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

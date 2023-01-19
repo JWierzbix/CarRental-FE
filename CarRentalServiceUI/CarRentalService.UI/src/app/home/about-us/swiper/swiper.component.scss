@@ -1,0 +1,31 @@
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+.my-swiper {
+  position: absolute;
+  top: 180vh;
+  height: 15vh;
+  width: 100%;
+  background-color: #0A100D;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffff;
+  height: 100%;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 30px;
+}
+.swiper-button-next {
+  padding: 20px;
+  color: rgba(242, 170, 76, 1);
+}
+.swiper-button-prev {
+  padding: 20px;
+  color: rgba(242, 170, 76, 1);
+}
