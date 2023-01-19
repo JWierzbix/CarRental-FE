@@ -11,6 +11,7 @@ import { AboutUsComponent } from './home/about-us/about-us.component';
 import { CarsComponent } from './cars/cars.component';
 import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing.directive';
 import { CarComponent } from './cars/car/car.component';
+import { CarDetailsComponent } from './cars/car/car-details/car-details.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CarComponent } from './cars/car/car.component';
     AboutUsComponent,
     CarsComponent,
     CollapseWhenRoutingDirective,
-    CarComponent
+    CarComponent,
+    CarDetailsComponent
   ],
   imports: [
     BrowserModule,
