@@ -3,4 +3,9 @@ $theme-colors: (
     "primary" : #F2AA4CFF
 );
 
+body {
+    background-color: #141414 !important;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap"
+

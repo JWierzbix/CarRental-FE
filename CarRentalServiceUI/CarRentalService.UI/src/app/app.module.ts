@@ -8,6 +8,11 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { BackgroundS1Component } from './home/background-s1/background-s1.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './home/about-us/about-us.component';
+import { SwiperComponent } from './home/about-us/swiper/swiper.component'
+import { SwiperModule } from 'swiper/angular'
+import { CarsComponent } from './cars/cars.component';
+import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing.directive';
+import { CarComponent } from './cars/car/car.component';
 import { NewsletterComponent } from './home/newsletter/newsletter.component';
 
 @NgModule({
@@ -17,11 +22,17 @@ import { NewsletterComponent } from './home/newsletter/newsletter.component';
     BackgroundS1Component,
     HomeComponent,
     AboutUsComponent,
+    SwiperComponent,
+    CarsComponent,
+    CollapseWhenRoutingDirective,
+    CarComponent,
+    AboutUsComponent,
     NewsletterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
