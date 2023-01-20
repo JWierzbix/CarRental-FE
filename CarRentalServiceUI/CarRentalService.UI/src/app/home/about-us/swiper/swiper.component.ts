@@ -19,7 +19,7 @@ export class SwiperComponent implements OnInit {
 
   ngOnInit(): void {
     this.slides$.next(
-      Array.from([`ferrari`, `bmw`, 'audi', 'tesla', 'bugatti', 'lamborghini', 'mercedes', 'RR']).map((el, index) => `assets/${el}.png`)
+      Array.from([`ferrari`, `bmw`, 'audi', 'tesla', 'bugatti', 'lamborghini', 'mercedes', 'RR']).map((el, index) => `assets/trademarks/${el}.png`)
     );
   }
 }
