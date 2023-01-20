@@ -15,7 +15,7 @@ export class CarService {
     return new Observable((observer: Observer<Car[]>) => {
       setTimeout(() => {
         observer.next(temporary.cars);
-      }, 2000)
+      }, 200)
     });
   }
 
@@ -28,7 +28,7 @@ export class CarService {
         else {
           observer.error('BMW  ssie');
         }   
-      }, 2000)
+      }, 200)
     });
   }
 }

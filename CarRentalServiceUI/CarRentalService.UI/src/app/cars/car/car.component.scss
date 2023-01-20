@@ -1,3 +1,5 @@
+$basic-font-color: #FFFF;
+
 .car {
     border-left: 5px solid #F2AA4CFF;
     padding-left: 10px;
@@ -14,12 +16,12 @@
 }
 
 p {
-    color: white;
+    color: $basic-font-color;
     margin-bottom: 1px;
 }
 
 .car-name {
-    color: white;
+    color: $basic-font-color;
 }
 
 .price {
@@ -35,7 +37,7 @@ p {
     padding: 0 1rem;
     margin-bottom: 7px;
     background-color: #F2AA4CFF;
-    color: white;
+    color: $basic-font-color;
 }
 
 .car-details-btn {
@@ -43,6 +45,6 @@ p {
     background-color: transparent;
     border: 1px solid #F2AA4CFF;
     color: white;
-    margin: 0 auto;
+    margin: 0 $basic-font-color;
     padding: 0 1rem;
 }
