@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './home/about-us/about-us.component';
 import { SwiperComponent } from './home/about-us/swiper/swiper.component'
 import { SwiperModule } from 'swiper/angular'
+import { CarsComponent } from './cars/cars.component';
+import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing.directive';
+import { CarComponent } from './cars/car/car.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { SwiperModule } from 'swiper/angular'
     HomeComponent,
     AboutUsComponent,
     SwiperComponent,
+    CarsComponent,
+    CollapseWhenRoutingDirective,
+    CarComponent
   ],
   imports: [
     BrowserModule,
