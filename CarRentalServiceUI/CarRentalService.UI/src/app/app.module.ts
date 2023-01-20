@@ -13,6 +13,7 @@ import { SwiperModule } from 'swiper/angular'
 import { CarsComponent } from './cars/cars.component';
 import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing.directive';
 import { CarComponent } from './cars/car/car.component';
+import { NewsletterComponent } from './home/newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { CarComponent } from './cars/car/car.component';
     SwiperComponent,
     CarsComponent,
     CollapseWhenRoutingDirective,
-    CarComponent
+    CarComponent,
+    AboutUsComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,
