@@ -13,6 +13,8 @@ import { SwiperModule } from 'swiper/angular'
 import { CarsComponent } from './cars/cars.component';
 import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing.directive';
 import { CarComponent } from './cars/car/car.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 import { NewsletterComponent } from './home/newsletter/newsletter.component';
 import { CarDetailsComponent } from './cars/car/car-details/car-details.component';
 import { LoadingComponent } from './loading/loading.component';
@@ -31,6 +33,8 @@ import { LatestHitsComponent } from './home/latest-hits/latest-hits.component';
     CarsComponent,
     CollapseWhenRoutingDirective,
     CarComponent,
+    SignUpComponent,
+    SignInComponent,
     AboutUsComponent,
     NewsletterComponent,
     CarComponent,
