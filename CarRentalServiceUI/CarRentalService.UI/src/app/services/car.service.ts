@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable, Observer } from 'rxjs';
-import { Car } from './car.model';
-import * as temporary from './cars-temporary-data';
+import { Car } from '../models/car.model';
+import * as temporary from '../models/cars-temporary-data';
+import { CarDetails } from '../models/car-details.model';
 
 
 @Injectable({
@@ -20,10 +21,10 @@ export class CarService {
   }
 
   getCarDetails(id: string) {
-    return new Observable((observer: Observer<string>) => {
+    return new Observable((observer: Observer<CarDetails>) => {
       setTimeout(() => {
         if(id === 'bmw-m8-competition'){
-          observer.next('BMW kox auto!');
+          observer.next(temporary.carDetail);
         }
         else {
           observer.error('BMW  ssie');

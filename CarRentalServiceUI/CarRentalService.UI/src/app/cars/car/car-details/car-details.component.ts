@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { CarService } from '../../car.service';
+import { CarDetails } from 'src/app/models/car-details.model';
+import { CarService } from '../../../services/car.service';
 
 @Component({
   selector: 'app-car-details',
@@ -9,7 +10,7 @@ import { CarService } from '../../car.service';
   styleUrls: ['./car-details.component.scss']
 })
 export class CarDetailsComponent implements OnInit {
-  text: string;
+  data: CarDetails;
   subscription: Subscription;
 
   constructor(
@@ -21,8 +22,8 @@ export class CarDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.subscription = this.route.params.subscribe((params: Params) => {
       this.carService.getCarDetails(params['name']).subscribe({
-        next: (details: string) => {
-          this.text = details;
+        next: (details: CarDetails) => {
+          this.data = details;
         },
         error: () => {
           this.router.navigate(['/not-found']);

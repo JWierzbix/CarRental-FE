@@ -1,22 +1,21 @@
 <div class="container">
-    <app-loading *ngIf="!text"></app-loading>
+    <app-loading *ngIf="!data"></app-loading>
 
-    <div *ngIf="text">
+    <div *ngIf="data">
         <div class="row car-general-info">
             <div class="col-xl-6 col-sm-12">
                 <img src="/assets/BMW.png" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col">
-                <h2 class="car-name"><span class="car-brand">BMW</span> M8 Competition</h2>
+                <h2 class="car-name"><span class="car-brand">{{ data.brand }}</span> {{ data.model }}</h2>
                 <div class="car-summary">
-                    <span class="stat">2021</span>
-                    <span class="stat">Automat</span>
-                    <span class="stat">Coupe</span>
-                    <span class="stat">2 Osobowy</span>
+                    <span class="stat">{{ data.releaseDate }}</span>
+                    <span class="stat">{{ data.gearBox }}</span>
+                    <span class="stat">{{ data.body }}</span>
+                    <span class="stat">{{ data.peopleCapacity }} osobowy</span>
                 </div>
                 <p class="car-desc">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt magnam totam corporis, excepturi odit cupiditate debitis.
-                    Facere deserunt placeat nostrum neque nesciunt earum consectetur cum provident dolores ad incidunt molestias, itaque aliquam, laborum ipsum quas amet, doloremque quisquam modi? Necessitatibus recusandae illo voluptas praesentium illum est cupiditate sapiente, facilis rem?
+                    {{ data.description }}
                 </p>
             </div>
         </div>
@@ -24,35 +23,35 @@
         <div class="row justify-content-center car-detail-info">
             <h4 class="inner-header">Specyfikacja</h4>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">2021</p>
+                <p class="details-stat">{{ data.releaseDate }}</p>
                 <p class="specification-attr">Rok produkcji</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">220 KM</p>
+                <p class="details-stat">{{ data.power }} KM</p>
                 <p class="specification-attr">Moc</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">3.0</p>
+                <p class="details-stat">{{ data.engineCapacity | number: '1.1' }}</p>
                 <p class="specification-attr">Silnik</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">4x4</p>
+                <p class="details-stat">{{ data.drive }}x{{ data.drive }}</p>
                 <p class="specification-attr">Napęd</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">300 km/h</p>
+                <p class="details-stat">{{ data.acceleration }} km/h</p>
                 <p class="specification-attr">Przyspieszenie</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">2.3 s</p>
+                <p class="details-stat">{{ data.timeFrom0To100 | number: '1.1-2' }} s</p>
                 <p class="specification-attr">0-100</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">Automat</p>
+                <p class="details-stat">{{ data.gearBox }}</p>
                 <p class="specification-attr">skrzynia biegów</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">Coupe</p>
+                <p class="details-stat">{{ data.body }}</p>
                 <p class="specification-attr">karoseria</p>
             </div>
         </div>
