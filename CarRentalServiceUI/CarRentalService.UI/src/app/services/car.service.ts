@@ -12,7 +12,7 @@ export class CarService {
 
   constructor() { }
 
-  getAllCars() {
+  getAllCars(): Observable<Car[]> {
     return new Observable((observer: Observer<Car[]>) => {
       setTimeout(() => {
         observer.next(temporary.cars);
@@ -20,7 +20,7 @@ export class CarService {
     });
   }
 
-  getCarDetails(id: string) {
+  getCarDetails(id: string): Observable<CarDetails> {
     return new Observable((observer: Observer<CarDetails>) => {
       setTimeout(() => {
         if(id === 'bmw-m8-competition'){

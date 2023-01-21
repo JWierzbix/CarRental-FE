@@ -1,5 +1,6 @@
 export class CarDetails {
     constructor(
+        public carId: string,
         public brand: string,
         public model: string,
         public description: string,
@@ -9,8 +10,9 @@ export class CarDetails {
         public drive: number,
         public acceleration: number,
         public timeFrom0To100: number,
-        public gearBox: string,
-        public body: string,
-        public peopleCapacity: number
+        public gearboxType: string,
+        public carCategory: string,
+        public peopleCapacity: number,
+        public image: string
     ) {}
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Car } from '../models/car.model';
+import { CarApiService } from '../services/car-api.service';
 import { CarService } from '../services/car.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class CarsComponent implements OnInit {
   carsObservable: Observable<Car[]>;
   cars: Car[];
 
-  constructor(private carService: CarService) {}
+  constructor(private carService: CarApiService) {}
 
   ngOnInit(): void {
     this.carsObservable = this.carService.getAllCars()

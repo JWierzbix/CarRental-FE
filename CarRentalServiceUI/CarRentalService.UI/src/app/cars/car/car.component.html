@@ -1,28 +1,31 @@
 <div class="car mb-3">
     <div class="row g-1">
         <div class="col-sm-7">
-            <h6 class="card-title car-name">{{ data.brand }} {{ data.name }}</h6>
+            <h6 class="card-title car-name">{{ data.brand }} {{ data.model }}</h6>
             <h6 class="price">od {{ data.price }}zł/dzień</h6>
-            <img src="/assets/bmw.png" class="img-fluid rounded-start" alt="...">
+            <img 
+              class="img-fluid rounded-start"
+              id='base64image'
+              src='data:image/png;base64, {{ data.image }}'>
         </div>
         <div class="col-sm-5">
             <div class="card-body">
                 <div class="car-stats">
                     <p class="card-text">Silnik</p>
-                    <p class="card-text">{{ data.engineCapacity | number : '1.1-2' }} / {{ data.horsePower }}hp</p>
-                    <p class="card-text">{{ data.drive }}</p>
+                    <p class="card-text">{{ data.engineCapacity | number : '1.1-2' }} / {{ data.power }} hp</p>
+                    <p class="card-text">{{ data.gearboxType }}</p>
                     <p class="card-text">od 0 do 100km/h</p>
                     <p class="card-text">{{ data.timeFrom0To100 | number : '1.1-2' }} s</p>
                 </div>
                 <div class="btns">
                     <button 
-                      [routerLink]="['/samochody', 'bmw-m8-competition']"
+                      [routerLink]="['/samochody', data.carId]"
                        
                       class="book-btn btn">
                         Zarezerwuj
                     </button><br>
                     <button
-                      [routerLink]="['/samochody', 'bmw-m8-competition']" 
+                      [routerLink]="['/samochody', data.carId]" 
                       class="car-details-btn btn">
                        Więcej
                     </button>

@@ -1,11 +1,13 @@
 export class Car {
     constructor(
-        public name: string,
+        public carId: string,
+        public model: string,
         public brand: string,
         public price: number,
         public engineCapacity: number,
-        public horsePower: number,
-        public drive: string,
-        public timeFrom0To100: number
+        public power: number,
+        public gearboxType: string,
+        public timeFrom0To100: number,
+        public image: string
     ) {}
 }
