@@ -14,6 +14,7 @@ import { CarsComponent } from './cars/cars.component';
 import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing.directive';
 import { CarComponent } from './cars/car/car.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     CarsComponent,
     CollapseWhenRoutingDirective,
     CarComponent,
-    SignUpComponent
+    SignUpComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
