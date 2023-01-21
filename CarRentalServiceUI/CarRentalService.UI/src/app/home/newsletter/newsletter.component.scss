@@ -1,0 +1,105 @@
+.test{
+    position: relative;
+    top: 200vh;
+    height: 100vh;
+    background-color: #111111;
+}
+
+.Title{
+    position: absolute;
+    color: #FFFF;
+    font-size: 45px;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1200px){
+    .Title{
+        display: none;
+    }
+
+    .form-text.text-muted{
+        font-size: smaller;
+    }
+
+}
+
+.accordion{
+    position: absolute;
+    width: 40%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.accordion-button{
+    font-weight: bold;
+    background-color: #F2AA4CFF;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.accordion-body{
+    background-color: #F2AA4CFF;
+    color: black;
+    font-size: 15px;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.container{
+    background-color: #111111;
+    position: relative;
+    top: 65%;
+    max-width: 1900px;
+}
+
+.text-uppercase {
+    color: #0f0f0f;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F2AA4CFF;
+}
+
+.text-white{
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.text-white-sggw{
+    text-decoration: none;
+    color: grey;
+}
+
+.text-white:hover{
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.form-group{
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
