@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .latest-hits {
-
+    width: 99vw;
+    height: 100%;
     color: #fff;
 
     .header {
@@ -28,5 +29,9 @@
 @media screen and (max-width: 960px) {
     .best-cars {
         margin-top: 2vh !important;
+    }
+
+    .header {
+        margin-top: 5vh !important;
     }
 }
