@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.latest-hits {
+
+    color: #fff;
+
+    .header {
+        text-align: center;
+        margin-top: 16vh;
+        font-family: 'Lobster', cursive;
+        font-size: 60px !important;
+    }
+
+    .underline {
+        text-decoration: underline #F2AA4CFF;
+    }
+
+    app-car {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .best-cars {
+        margin-top: 20vh;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .best-cars {
+        margin-top: 2vh !important;
+    }
+}

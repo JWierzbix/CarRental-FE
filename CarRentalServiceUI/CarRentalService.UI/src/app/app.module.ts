@@ -18,6 +18,7 @@ import { CarDetailsComponent } from './cars/car/car-details/car-details.componen
 import { LoadingComponent } from './loading/loading.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LatestHitsComponent } from './home/latest-hits/latest-hits.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     CarComponent,
     CarDetailsComponent,
     LoadingComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LatestHitsComponent
   ],
   imports: [
     BrowserModule,
