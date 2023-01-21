@@ -14,6 +14,9 @@ import { CarsComponent } from './cars/cars.component';
 import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing.directive';
 import { CarComponent } from './cars/car/car.component';
 import { NewsletterComponent } from './home/newsletter/newsletter.component';
+import { CarDetailsComponent } from './cars/car/car-details/car-details.component';
+import { LoadingComponent } from './loading/loading.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,11 @@ import { NewsletterComponent } from './home/newsletter/newsletter.component';
     CollapseWhenRoutingDirective,
     CarComponent,
     AboutUsComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    CarComponent,
+    CarDetailsComponent,
+    LoadingComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

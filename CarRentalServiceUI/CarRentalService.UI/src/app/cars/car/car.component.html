@@ -3,7 +3,7 @@
         <div class="col-sm-7">
             <h6 class="card-title car-name">{{ data.brand }} {{ data.name }}</h6>
             <h6 class="price">od {{ data.price }}zł/dzień</h6>
-            <img src="/assets/BMW.png" class="img-fluid rounded-start" alt="...">
+            <img src="/assets/bmw.png" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-sm-5">
             <div class="card-body">
@@ -15,8 +15,17 @@
                     <p class="card-text">{{ data.timeFrom0To100 | number : '1.1-2' }} s</p>
                 </div>
                 <div class="btns">
-                    <button class="book-btn btn">Zarezerwuj</button><br>
-                    <button class="car-details-btn btn">Więcej</button>
+                    <button 
+                      [routerLink]="['/samochody', 'bmw-m8-competition']"
+                       
+                      class="book-btn btn">
+                        Zarezerwuj
+                    </button><br>
+                    <button
+                      [routerLink]="['/samochody', 'bmw-m8-competition']" 
+                      class="car-details-btn btn">
+                       Więcej
+                    </button>
                 </div>
             </div>
         </div>
