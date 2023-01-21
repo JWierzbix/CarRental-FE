@@ -49,3 +49,9 @@ p {
     margin: 0 $basic-font-color;
     padding: 0 1rem;
 }
+
+@media screen and (max-width: 960px) {
+    .price {
+        margin-bottom: 5%;
+    }
+}

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { CarDetails } from 'src/app/models/car-details.model';
-import { CarService } from '../../../services/car.service';
+import { CarApiService } from 'src/app/services/car-api.service';
 
 @Component({
   selector: 'app-car-details',
@@ -15,7 +15,7 @@ export class CarDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private carService: CarService,
+    private carService: CarApiService,
     private router: Router
   ) {}
 

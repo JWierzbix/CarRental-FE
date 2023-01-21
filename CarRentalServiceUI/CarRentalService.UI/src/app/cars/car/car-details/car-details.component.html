@@ -4,14 +4,17 @@
     <div *ngIf="data">
         <div class="row car-general-info">
             <div class="col-xl-6 col-sm-12">
-                <img src="/assets/bmw.png" class="img-fluid rounded-start" alt="...">
+                <img 
+                class="img-fluid rounded-start"
+                id='base64image'
+                src='data:image/png;base64, {{ data.image }}'>
             </div>
             <div class="col">
                 <h2 class="car-name"><span class="car-brand">{{ data.brand }}</span> {{ data.model }}</h2>
                 <div class="car-summary">
                     <span class="stat">{{ data.releaseDate }}</span>
-                    <span class="stat">{{ data.gearBox }}</span>
-                    <span class="stat">{{ data.body }}</span>
+                    <span class="stat">{{ data.gearboxType }}</span>
+                    <span class="stat">{{ data.carCategory }}</span>
                     <span class="stat">{{ data.peopleCapacity }} osobowy</span>
                 </div>
                 <p class="car-desc">
@@ -47,11 +50,11 @@
                 <p class="specification-attr">0-100</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">{{ data.gearBox }}</p>
+                <p class="details-stat">{{ data.gearboxType }}</p>
                 <p class="specification-attr">skrzynia biegów</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">{{ data.body }}</p>
+                <p class="details-stat">{{ data.carCategory }}</p>
                 <p class="specification-attr">karoseria</p>
             </div>
         </div>
