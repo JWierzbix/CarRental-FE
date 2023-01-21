@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Roboto&family=Space+Grotesk:wght@700&family=Syne+Tactile&display=swap');
+
+$basic-font-color: #FFFF;
+
+.container {
+    margin-top: 130px;
+}
+
+.car-general-info {
+    border-left: 5px solid #F2AA4CFF;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: #141414;
+    margin-bottom: 4rem;
+}
+
+.car-name {
+    margin-bottom: 1.5rem;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    .car-brand {
+        text-decoration: underline #F2AA4CFF;
+    }
+}
+
+.car-desc {
+    font-family: 'Roboto', sans-serif;
+}
+
+.car-summary {
+    background-color: #353535;
+    margin-bottom: 1.5rem;
+    padding: 10px 5px;
+
+    .stat {
+        text-transform: uppercase;
+        color: $basic-font-color;
+        margin-right: 1rem;
+        padding-left: 5px;
+        border-left: 3px solid #F2AA4CFF;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+}
+
+p, h2 {
+    color: $basic-font-color;
+}
+
+.car-header {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    margin: 1.5rem 0px;
+}
+
+.inner-header {
+    margin-bottom: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.car-detail-info {
+    border: 2px solid #F2AA4CFF;
+    border-radius: 10px;
+    background-color: #F2AA4CFF;
+    padding: 1.5rem 2rem;
+    margin: 0px 0.1rem;
+
+    * {
+        color: #141414;
+    }
+
+    .inner-header {
+        color: #2c2a2a;
+    }
+
+    .details-stat {
+        font-size: 2rem;
+        font-family: 'Space Grotesk', sans-serif;
+        margin-bottom: 0px;
+    }
+
+    .specification {
+        text-align: center;
+    }
+
+    .specification-attr {
+        font-size: 1.5rem;
+        font-family: 'Space Grotesk', sans-serif;
+        color: #2c2a2a;
+    }
+}

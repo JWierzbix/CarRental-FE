@@ -15,6 +15,12 @@ import { CollapseWhenRoutingDirective } from './directives/collapse-when-routing
 import { CarComponent } from './cars/car/car.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { NewsletterComponent } from './home/newsletter/newsletter.component';
+import { CarDetailsComponent } from './cars/car/car-details/car-details.component';
+import { LoadingComponent } from './loading/loading.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LatestHitsComponent } from './home/latest-hits/latest-hits.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +34,20 @@ import { SignInComponent } from './sign-in/sign-in.component';
     CollapseWhenRoutingDirective,
     CarComponent,
     SignUpComponent,
-    SignInComponent
+    SignInComponent,
+    AboutUsComponent,
+    NewsletterComponent,
+    CarComponent,
+    CarDetailsComponent,
+    LoadingComponent,
+    NotFoundComponent,
+    LatestHitsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

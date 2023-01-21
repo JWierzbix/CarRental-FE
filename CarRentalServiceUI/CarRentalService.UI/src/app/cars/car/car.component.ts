@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Car } from '../car.model';
+import { Car } from '../../models/car.model';
 
 @Component({
   selector: 'app-car',
@@ -7,5 +7,5 @@ import { Car } from '../car.model';
   styleUrls: ['./car.component.scss']
 })
 export class CarComponent {
-  @Input() data: Car = new Car('default', 'default', 2137, 6.9, 420, 'default', 1.5);
+  @Input() data: Car;
 }

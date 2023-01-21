@@ -1,0 +1,64 @@
+<div class="container">
+    <app-loading *ngIf="!data"></app-loading>
+
+    <div *ngIf="data">
+        <div class="row car-general-info">
+            <div class="col-xl-6 col-sm-12">
+                <img 
+                class="img-fluid rounded-start"
+                id='base64image'
+                src='data:image/png;base64, {{ data.image }}'>
+            </div>
+            <div class="col">
+                <h2 class="car-name"><span class="car-brand">{{ data.brand }}</span> {{ data.model }}</h2>
+                <div class="car-summary">
+                    <span class="stat">{{ data.releaseDate }}</span>
+                    <span class="stat">{{ data.gearboxType }}</span>
+                    <span class="stat">{{ data.carCategory }}</span>
+                    <span class="stat">{{ data.peopleCapacity }} osobowy</span>
+                </div>
+                <p class="car-desc">
+                    {{ data.description }}
+                </p>
+            </div>
+        </div>
+        <h2 class="car-header">Szczegóły techniczne</h2>
+        <div class="row justify-content-center car-detail-info">
+            <h4 class="inner-header">Specyfikacja</h4>
+            <div class="col-xl-3 col-md-4 col-sm-6 specification">
+                <p class="details-stat">{{ data.releaseDate }}</p>
+                <p class="specification-attr">Rok produkcji</p>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 specification">
+                <p class="details-stat">{{ data.power }} KM</p>
+                <p class="specification-attr">Moc</p>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 specification">
+                <p class="details-stat">{{ data.engineCapacity | number: '1.1' }}</p>
+                <p class="specification-attr">Silnik</p>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 specification">
+                <p class="details-stat">{{ data.drive }}x{{ data.drive }}</p>
+                <p class="specification-attr">Napęd</p>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 specification">
+                <p class="details-stat">{{ data.acceleration }} km/h</p>
+                <p class="specification-attr">Przyspieszenie</p>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 specification">
+                <p class="details-stat">{{ data.timeFrom0To100 | number: '1.1-2' }} s</p>
+                <p class="specification-attr">0-100</p>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 specification">
+                <p class="details-stat">{{ data.gearboxType }}</p>
+                <p class="specification-attr">skrzynia biegów</p>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 specification">
+                <p class="details-stat">{{ data.carCategory }}</p>
+                <p class="specification-attr">karoseria</p>
+            </div>
+        </div>
+
+        <h2 class="car-header">Cennik</h2>
+    </div>
+</div>
