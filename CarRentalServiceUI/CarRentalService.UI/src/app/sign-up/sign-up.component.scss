@@ -1,29 +1,37 @@
 .title{
+	font-weight: bold;
 	position: relative;
-	top: 130px;
+	top: 90px;
 	color: white;
-	font-size: 5vh;
+	font-size: 5vmin;
 	left: 12vmin;
 	width: 50vw;
 	.subtitle{
-		color: white;
+		color: gray;
 		
 		font-size: 50%;
+		
 	}
+	.link{
+		font-size:50%;
+		color: rgb(242, 170, 76, 1);
+	}
+	
 }
+
 
 .label{
 	position: relative;
 	left: 3vmin;
 	color: rgb(242, 170, 76, 1);
 	float: left;
-	font-size: 120%;
+	font-size: 2vmin;
 }
 
 .form{
 	position: relative;
 	left: 10vmin;
-	top: 20vh;
+	top: 13vh;
 	width: 80vmin;
 	display: flex;
 	flex-direction: column;
@@ -32,7 +40,7 @@
 
 .inputfield{
 	position: relative;
-	left: 3vh;
+	left: 3vmin;
 	float: left;
 	background-color: rgb(24,24,24);
 	padding: 0;
@@ -54,12 +62,19 @@
 	border-width: 1px;
 	border-radius: 25px;
 	height: 8vh;
-	flex-basis:50%
+	flex-basis:50%;
 }	
 .in-row{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.next-to{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .icon{
