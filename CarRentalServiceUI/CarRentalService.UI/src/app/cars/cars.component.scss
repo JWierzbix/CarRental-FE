@@ -4,6 +4,7 @@
 
 .car-container {
     margin-bottom: 2rem;
+    padding-right: 50px;
 }
 
 .loading-screen {
@@ -18,5 +19,11 @@
     .spinner-border {
         width: 80px;
         height: 80px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .car-container {
+        padding-right: 0px;
     }
 }
