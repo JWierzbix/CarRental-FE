@@ -3,7 +3,6 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { CarDetails } from 'src/app/models/car-details.model';
 import { CarApiService } from 'src/app/services/car-api.service';
-import { CarService } from '../../../services/car.service';
 
 @Component({
   selector: 'app-car-details',
