@@ -1,0 +1,104 @@
+.title{
+	font-weight: bold;
+
+	position: relative;
+	top: 130px;
+	color: white;
+	font-size: 5vh;
+	left: 12vmin;
+	width: 50vw;
+	.subtitle{
+		color: gray;
+		
+		font-size: 50%;
+		
+	}
+	.link{
+		font-size:50%;
+		color: rgb(242, 170, 76, 1);
+	}
+	
+}
+
+.label{
+	position: relative;
+	left: 3vmin;
+	color: rgb(242, 170, 76, 1);
+	float: left;
+	font-size: 120%;
+}
+
+.form{
+	position: relative;
+	left: 10vmin;
+	top: 20vh;
+	width: 80vmin;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5vh;
+	
+}
+
+.inputfield{
+	position: relative;
+	left: 3vh;
+	float: left;
+	background-color: rgb(24,24,24);
+	padding: 0;
+	outline: none;
+	height: 4vh;
+	border-width: 0;
+	width: 70%;
+	font-size: 120%;
+	color: white;
+}
+
+.field{
+	margin-bottom: 1vw;
+	margin-left: 1vw;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(24,24,24);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 25px;
+	height: 8vh;
+	flex-basis:50%
+}
+
+.in-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.next-to{
+	display: flex;
+	flex-direction: row;
+}
+
+.icon{
+	font-size: 150%;
+	position: relative;
+	bottom: 10px;
+	right: 15px;
+	color: rgb(242, 170, 76, 1);
+}
+
+.button {
+	color: white;
+	background-color: rgb(242, 170, 76, 1);
+	width: 100%;
+	height: 7vh;
+	border-style: solid;
+	border-radius: 25px;
+	border-width: 1px;
+	font-size: 150%;
+	box-sizing: border-box;
+}
+
+.background-image {
+    background-image: url('../../assets/sing-up-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
