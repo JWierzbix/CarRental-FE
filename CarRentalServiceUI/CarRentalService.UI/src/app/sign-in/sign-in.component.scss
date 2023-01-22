@@ -1,6 +1,5 @@
 .title{
 	font-weight: bold;
-
 	position: relative;
 	top: 130px;
 	color: white;
@@ -9,13 +8,12 @@
 	width: 50vw;
 	.subtitle{
 		color: gray;
-		
 		font-size: 50%;
-		
 	}
 	.link{
 		font-size:50%;
 		color: rgb(242, 170, 76, 1);
+		cursor: pointer;
 	}
 	
 }
@@ -95,6 +93,13 @@
 	border-width: 1px;
 	font-size: 150%;
 	box-sizing: border-box;
+	margin-bottom: 25px;
+}
+
+.button:hover{
+	color: black;
+	border-color: black;
+	transition: all 0.3s ease;
 }
 
 .background-image {
@@ -102,4 +107,35 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+@media screen and (max-width: 1200px){
+	.title{
+		font-size: 30px;
+		.subtitle{
+			font-size: 55%;
+		}
+		.link{
+			margin-top: 5px;
+			font-size:55%;
+		}
+	}
+
+	.field{
+		margin-bottom: 2vw;
+	}
+
+	.label{
+		font-size: 95%;
+	}
+
+	.icon{
+		font-size: 120%;
+	}
+
+	.button {
+		height: 7vh;
+		font-size: 130%;
+		margin-bottom: 10px;
+	}
 }
