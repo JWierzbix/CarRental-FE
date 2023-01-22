@@ -9,7 +9,7 @@ export class CarDetails {
         public engineCapacity: number,
         public drive: number,
         public acceleration: number,
-        public timeFrom0To100: number,
+        public timeForm0To100: number,
         public gearboxType: string,
         public carCategory: string,
         public peopleCapacity: number,

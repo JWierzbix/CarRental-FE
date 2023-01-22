@@ -8,6 +8,7 @@ export class Car {
         public power: number,
         public gearboxType: string,
         public acceleration: number,
-        public image: string
+        public image: string,
+        public timeForm0To100: number
     ) {}
 }

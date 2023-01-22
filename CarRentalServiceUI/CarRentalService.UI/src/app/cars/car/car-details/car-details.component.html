@@ -42,11 +42,11 @@
                 <p class="specification-attr">Napęd</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">{{ (data.power / 1.7 + 20) | number: '1.0-0'}} km/h</p>
+                <p class="details-stat">{{ data.acceleration | number: '1.0-0'}} km/h</p>
                 <p class="specification-attr">Przyspieszenie</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
-                <p class="details-stat">{{ data.acceleration | number: '1.1-2' }} s</p>
+                <p class="details-stat">{{ data.timeForm0To100 | number: '1.1-2' }} s</p>
                 <p class="specification-attr">0-100</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
