@@ -13,6 +13,7 @@ export class CarDetails {
         public gearboxType: string,
         public carCategory: string,
         public peopleCapacity: number,
-        public image: string
+        public image: string,
+        public price: number
     ) {}
 }
