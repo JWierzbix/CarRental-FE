@@ -23,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { LatestHitsComponent } from './home/latest-hits/latest-hits.component';
 import { BestCarComponent } from './home/latest-hits/best-car/best-car.component';
 import { FormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [
@@ -51,7 +53,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     SwiperModule,
     HttpClientModule,
-    FormsModule      
+    FormsModule,
+	MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

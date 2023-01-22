@@ -3,6 +3,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { CarDetails } from 'src/app/models/car-details.model';
 import { CarApiService } from 'src/app/services/car-api.service';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-car-details',
@@ -16,7 +17,8 @@ export class CarDetailsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private carService: CarApiService,
-    private router: Router
+    private router: Router,
+	public snackBar: MatSnackBar
   ) {}
 
   ngOnInit(): void {
@@ -29,6 +31,12 @@ export class CarDetailsComponent implements OnInit {
           this.router.navigate(['/not-found']);
         }
       })
+    });
+  }
+  
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      duration: 2000,
     });
   }
 }
