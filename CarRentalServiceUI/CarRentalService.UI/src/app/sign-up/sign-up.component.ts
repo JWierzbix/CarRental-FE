@@ -18,6 +18,10 @@ export class SignUpComponent {
 
   onSubmit() {
     console.log(this.form.value);
-    //this.authService.register()
+    const data = this.form.value;
+    this.authService.register(data).subscribe(res => {
+      console.log(res)
+      this.router.navigate(['/zaloguj'])
+    })
   }
 }

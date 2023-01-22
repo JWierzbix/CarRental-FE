@@ -26,4 +26,8 @@ export class AuthenticationService {
       responseType: 'text'
     }).pipe(map(res => jwt_decode(res)))
   }
+
+  register(data: any) {
+    return this.http.post('http://carrentalservice-001-site1.atempurl.com/api/account', data);
+  }
 }
