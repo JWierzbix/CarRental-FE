@@ -21,6 +21,7 @@ import { LoadingComponent } from './loading/loading.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LatestHitsComponent } from './home/latest-hits/latest-hits.component';
+import { BestCarComponent } from './home/latest-hits/best-car/best-car.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -42,7 +43,8 @@ import { FormsModule } from '@angular/forms';
     CarDetailsComponent,
     LoadingComponent,
     NotFoundComponent,
-    LatestHitsComponent
+    LatestHitsComponent,
+    BestCarComponent,
   ],
   imports: [
     BrowserModule,

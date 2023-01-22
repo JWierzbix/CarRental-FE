@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .latest-hits {
-    width: 99vw;
     height: 100%;
     color: #fff;
 
@@ -9,7 +8,7 @@
         text-align: center;
         margin-top: 16vh;
         font-family: 'Lobster', cursive;
-        font-size: 60px !important;
+        font-size: 60px;
     }
 
     .underline {
@@ -24,6 +23,14 @@
     .best-cars {
         margin-top: 20vh;
     }
+
+    .loading {
+        margin-top: 100px;
+        .spinner-border {
+            width: 80px;
+            height: 80px;
+        }
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -33,5 +40,13 @@
 
     .header {
         margin-top: 5vh !important;
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .header {
+        margin-top: 5vh !important;
+        font-size: 30px !important;
     }
 }

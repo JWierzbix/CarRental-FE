@@ -1,21 +1,22 @@
-import { Component } from '@angular/core';
-import { Car } from 'src/app/models/car.model';
+import { Component, OnInit } from '@angular/core';
+import { CarDetails } from 'src/app/models/car-details.model';
+import { CarApiService } from 'src/app/services/car-api.service';
 
 @Component({
   selector: 'app-latest-hits',
   templateUrl: './latest-hits.component.html',
   styleUrls: ['./latest-hits.component.scss']
 })
-export class LatestHitsComponent {
-  carData: Car = new Car(
-    '5594f703-37c6-43df-b599-af54bc59d376',
-    'M8 Competition',
-    'BMw',
-    2200,
-    3.0,
-    220,
-    'Automat',
-    2.3,
-    ''
-)
+export class LatestHitsComponent implements OnInit {
+  popularCars: CarDetails[];
+
+  constructor(
+    private carService: CarApiService
+  ) {}
+
+  ngOnInit() {
+    this.carService.getCarsByPopularity().subscribe((res) => {
+      this.popularCars = res.slice(0, 3);
+    })
+  }
 }
