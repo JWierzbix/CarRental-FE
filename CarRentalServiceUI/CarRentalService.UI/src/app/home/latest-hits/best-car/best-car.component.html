@@ -1,0 +1,13 @@
+<div class="best-car-container">
+    <img class="card-img-top" id='base64image' src='data:image/png;base64, {{ data.image }}'>
+    <div class="card-body">
+        <h4><span class="brand">{{ data.brand }}</span> {{ data.model }}</h4>
+        <p class="price">{{ data.price }}zł/dzień</p>
+        <p class="card-text description">
+            {{ data.description }}
+        </p>
+        <button [routerLink]="['/samochody', data.carId]" class="book-btn btn">
+            Zarezerwuj
+        </button><br>
+    </div>
+</div>

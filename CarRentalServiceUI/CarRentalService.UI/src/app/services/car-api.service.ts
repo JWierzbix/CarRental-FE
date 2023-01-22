@@ -11,6 +11,7 @@ export class CarApiService {
   BASE_URL: string = 'http://carrentalservice-001-site1.atempurl.com/api/'
   GET_CARS: string = 'cars'
   GET_CAR: string = 'car?carId='
+  GET_CARS_BY_POPULARITY: string = 'cars?Option=Popularity'
 
   constructor(
     private http: HttpClient
@@ -23,5 +24,10 @@ export class CarApiService {
   getCarDetails(id: string): Observable<CarDetails> {
     const url = this.BASE_URL + this.GET_CAR + id;
     return this.http.get<CarDetails>(url);
+  }
+
+  getCarsByPopularity() {
+    const url: string = this.BASE_URL + this.GET_CARS_BY_POPULARITY;
+    return this.http.get<CarDetails[]>(url);
   }
 }
