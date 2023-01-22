@@ -21,6 +21,7 @@ import { LoadingComponent } from './loading/loading.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LatestHitsComponent } from './home/latest-hits/latest-hits.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { LatestHitsComponent } from './home/latest-hits/latest-hits.component';
     BrowserModule,
     AppRoutingModule,
     SwiperModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule      
   ],
   providers: [],
   bootstrap: [AppComponent]
