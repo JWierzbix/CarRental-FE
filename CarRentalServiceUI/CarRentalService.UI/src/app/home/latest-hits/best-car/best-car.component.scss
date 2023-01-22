@@ -1,0 +1,26 @@
+.best-car-container {
+    background-color: transparent;
+    border-top: 5px solid #F2AA4CFF;
+    border-radius: 5px;
+    margin-top: 5rem;
+}
+
+.brand {
+    text-decoration: underline #F2AA4CFF;
+}
+
+.book-btn {
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 7px;
+    background-color: #F2AA4CFF;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 1000px) { 
+    .description {
+        font-size: 8px;
+    }
+}
+
