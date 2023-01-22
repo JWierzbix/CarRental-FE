@@ -11,11 +11,15 @@
 		> Zaloguj się </div>
 	</div>
 </div>
-<form class="form">
+<form class="form" #form="ngForm">
 	<div class="field">
 		<label class='label' for="email">E-mail</label>
 		<div class="in-row">
-			<input class="inputfield" type="text" id="email" name="email">
+			<input class="inputfield" 
+			type="text" 
+			id="email" 
+			name="emailAddress"
+			ngModel>
 			<i class="icon fa-solid fa-envelope"></i>
 		</div>
 	</div>
@@ -23,7 +27,9 @@
 	<div class="field">
 		<label class='label' for="user-name">Nazwa użytkownika</label>
 		<div class="in-row">
-			<input class="inputfield" type="text" id="user-name" name="user-name">
+			<input class="inputfield" type="text" id="user-name" 
+			name="userName"
+			ngModel>
 			<i class="icon fa-solid fa-user"></i>
 		</div>
 	</div>
@@ -31,7 +37,10 @@
 	<div class="field">
 		<label class='label' for="password">Hasło</label>
 		<div class="in-row">
-			<input class="inputfield" type="password" id="password" name="password">
+			<input class="inputfield" type="password" 
+			id="password" 
+			name="password"
+			ngModel>
 			<i class="icon fa-solid fa-eye"></i>
 		</div>
 	</div>
@@ -40,14 +49,19 @@
 		<div class="field">
 			<label class='label' for="name">Imię</label>
 			<div class="in-row">
-				<input class="inputfield" type="text" id="name" name="name">
+				<input class="inputfield" type="text" 
+				id="name" 
+				name="firstName"
+				ngModel>
 				<i class="icon fa-solid fa-id-card"></i>
 			</div>
 		</div>
 		<div class="field">
 			<label class='label' for="surname">Nazwisko</label>
 			<div class="in-row">
-				<input class="inputfield" type="text" id="surname" name="surname">
+				<input class="inputfield" type="text" id="surname" 
+				name="lastName"
+				ngModel>
 				<i class="icon fa-solid fa-id-card"></i>
 			</div>
 		</div>
@@ -58,7 +72,9 @@
 		<div class="field">
 			<label class='label' for="number">Numer telefonu</label>
 			<div class="in-row">
-				<input class="inputfield" type="text" id="number" name="number">
+				<input class="inputfield" type="text" id="number" 
+				name="phoneNumber"
+				ngModel>
 				<i class="icon fa-solid fa-phone"></i>
 			</div>
 		</div>
@@ -66,7 +82,9 @@
 		<div class="field">
 			<label class='label' for="card">Numer karty płatniczej</label>
 			<div class="in-row">
-				<input class="inputfield" type="text" id="card" name="card">
+				<input class="inputfield" type="text" id="card" 
+				name="cardNumber"
+				ngModel>
 				<i class="icon fa-solid fa-credit-card"></i>
 			</div>
 		</div>
@@ -89,7 +107,7 @@
 	</label>
 	
 	<div style="text-align: center">
-		<input class="button" type="submit" value="Zarejestruj">
+		<button class="button" (click)="onSubmit()" value="Zarejestruj">Zajerestruj</button>
 	</div>
 </form>
 </div>
