@@ -17,10 +17,24 @@
     color: #fff;
 }
 
+.price {
+    color: #F2AA4CFF;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 
-@media only screen and (max-width: 1000px) { 
+
+@media only screen and (max-height: 620px) { 
     .description {
-        font-size: 8px;
+        display: none;
     }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .best-car-container {
+        margin-top: 1rem;
+    }
+    
 }
 

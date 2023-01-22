@@ -35,3 +35,10 @@
         font-size: 30px !important;
     }
 }
+
+@media screen and (max-height: 800px) {
+    .header {
+        margin-top: 5vh !important;
+        font-size: 30px !important;
+    }
+}
