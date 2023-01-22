@@ -43,7 +43,7 @@
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
                 <p class="details-stat">{{ data.acceleration | number: '1.0-0'}} km/h</p>
-                <p class="specification-attr">Przyspieszenie</p>
+                <p class="specification-attr">Prędkość maksymalna</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
                 <p class="details-stat">{{ data.timeForm0To100 | number: '1.1-2' }} s</p>
@@ -60,5 +60,57 @@
         </div>
 
         <h2 class="car-header">Cennik</h2>
+        <div class="price-container">
+            <div class="row price-header">
+                <div class="col">Okres Najmu</div>
+                <div class="col">Wynajem bez kaucji</div>
+                <div class="col">Wynajem z kaucją (50 000 zł)</div>
+            </div>
+            <div class="row price-details">
+                <div class="col">2-3 doby</div> 
+                <div class="col"></div>
+                <div class="col">{{ data.price }} zł/doba</div>   
+            </div>
+            <div class="row price-details">
+                <div class="col">4-6 dób</div>
+                <div class="col"></div>
+                <div class="col">{{ data.price * 0.95 }} zł/doba</div>
+            </div>
+            <div class="row price-details">
+                <div class="col">Tydzień</div>
+                <div class="col"></div>
+                <div class="col">{{ data.price * 0.9 }} zł/doba</div>
+            </div>
+            <div class="row price-details">
+                <div class="col">dwa-trzy tygodnie</div>
+                <div class="col"></div>
+                <div class="col">{{ data.price * 0.8 }} zł/doba</div>
+            </div>
+            <div class="row price-details last">
+                <div class="col">Miesiąc</div>
+                <div class="col"></div>
+                <div class="col">{{ data.price * 0.7 }} zł/doba</div>
+            </div>
+        </div>
+        <h2 class="car-header">Wynajmij</h2>
+
+        <div class="row reserve justify-content-center">
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <p class="close">Od:</p>
+                <input type="date" class="date">
+            </div>
+            <div class="col-3">
+                <p class="close">Do:</p>
+                <input type="date" class="date">
+            </div>
+			
+            <div class="col-6">
+                <button class="check-if-available" (click)="onClick()"
+				>Sprawdź dostępność</button>
+				<div *ngIf="hide" style="color: white;"> Sprawdź potwierdzenie rejestracji na mailu </div>
+			</div>	
+        </div>
     </div>
 </div>

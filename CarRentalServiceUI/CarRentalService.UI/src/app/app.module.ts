@@ -24,6 +24,7 @@ import { LatestHitsComponent } from './home/latest-hits/latest-hits.component';
 import { BestCarComponent } from './home/latest-hits/best-car/best-car.component';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +52,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     SwiperModule,
     HttpClientModule,
-    FormsModule      
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

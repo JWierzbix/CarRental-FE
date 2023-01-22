@@ -12,6 +12,7 @@ import { CarApiService } from 'src/app/services/car-api.service';
 export class CarDetailsComponent implements OnInit {
   data: CarDetails;
   subscription: Subscription;
+  hide: boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -31,4 +32,9 @@ export class CarDetailsComponent implements OnInit {
       })
     });
   }
+  
+	onClick(): void {
+		this.hide = true;
+		console.log("jestem")
+	}
 }
