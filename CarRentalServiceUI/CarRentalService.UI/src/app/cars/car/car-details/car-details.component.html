@@ -105,9 +105,12 @@
                 <p class="close">Do:</p>
                 <input type="date" class="date">
             </div>
+			
             <div class="col-6">
-                <button class="check-if-available" (click)="openSnackBar(1, xd)" >Sprawdź dostępność</button>
-            </div>
+                <button class="check-if-available" (click)="onClick()"
+				>Sprawdź dostępność</button>
+				<div *ngIf="hide" style="color: white;"> Sprawdź potwierdzenie rejestracji na mailu </div>
+			</div>	
         </div>
     </div>
 </div>

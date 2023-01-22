@@ -3,7 +3,6 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { CarDetails } from 'src/app/models/car-details.model';
 import { CarApiService } from 'src/app/services/car-api.service';
-import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-car-details',
@@ -13,12 +12,12 @@ import { MatSnackBar } from '@angular/material';
 export class CarDetailsComponent implements OnInit {
   data: CarDetails;
   subscription: Subscription;
+  hide: boolean = false;
 
   constructor(
     private route: ActivatedRoute,
     private carService: CarApiService,
-    private router: Router,
-	public snackBar: MatSnackBar
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -34,9 +33,8 @@ export class CarDetailsComponent implements OnInit {
     });
   }
   
-  openSnackBar(message: string, action: string) {
-    this.snackBar.open(message, action, {
-      duration: 2000,
-    });
-  }
+	onClick(): void {
+		this.hide = true;
+		console.log("jestem")
+	}
 }
