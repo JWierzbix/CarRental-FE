@@ -43,7 +43,7 @@
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
                 <p class="details-stat">{{ data.acceleration | number: '1.0-0'}} km/h</p>
-                <p class="specification-attr">Przyspieszenie</p>
+                <p class="specification-attr">Prędkość maksymalna</p>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6 specification">
                 <p class="details-stat">{{ data.timeForm0To100 | number: '1.1-2' }} s</p>
@@ -92,9 +92,21 @@
                 <div class="col">{{ data.price * 0.7 }} zł/doba</div>
             </div>
         </div>
+        <h2 class="car-header">Wynajmij</h2>
+
         <div class="row reserve justify-content-center">
-            <div class="col">
-                <button class="btn">Wynajmij</button>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <p class="close">Od:</p>
+                <input type="date" class="date">
+            </div>
+            <div class="col-3">
+                <p class="close">Do:</p>
+                <input type="date" class="date">
+            </div>
+            <div class="col-6">
+                <button class="check-if-available">Sprawdź dostępność</button>
             </div>
         </div>
     </div>

@@ -114,13 +114,22 @@ h2 {
 
 .reserve {
     margin-top: 10px;
+}
 
-    button {
-        padding: 0 4rem;
-        margin-bottom: 7px;
-        background-color: #F2AA4CFF;
-        color: $basic-font-color;
-        font-family: 'Space Grotesk', sans-serif;
-        font-size: 1.2rem
-    }
+.check-if-available {
+    padding: 0 4rem;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    background-color: #F2AA4CFF;
+    color: $basic-font-color;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem
+}
+
+.close {
+    margin-bottom: 0px !important;
+}
+
+.date {
+    background-color: #F2AA4CFF;
 }
